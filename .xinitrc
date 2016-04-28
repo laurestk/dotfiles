@@ -9,7 +9,7 @@ setxkbmap fi,br &
 
 conky -c ~/.config/conky/conkyrc &
  
-#xrdb -merge ~/.config/term &
+xrdb -merge ~/.config/UrxvtColors &
 
 #eval $(ssh-agent)
 

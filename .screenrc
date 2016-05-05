@@ -6,3 +6,9 @@ defscrollback 32000
 
 # Always start `screen` with UTF-8 enabled (`screen -U`)
 defutf8 on
+
+# get last layout
+source .screen_layout
+
+# save current layout
+layout save def

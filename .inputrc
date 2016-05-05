@@ -1,3 +1,25 @@
+# To avoid bugs. See https://wiki.archlinux.org/index.php/Readline#History
+$include /etc/inputrc
+
+# Use VI style
+set editing-mode vi
+
+# Moving between words with Ctrl+Left and Ctrl+Right
+"\eOd": backward-word
+"\eOc": forward-word
+
+# Fix a weird bug. See ArchWiki about Readline
+$if mode=vi
+set keymap vi-command
+# these are for vi-command mode
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set keymap vi-insert
+# these are for vi-insert mode
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+$endif
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 

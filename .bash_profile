@@ -35,3 +35,5 @@ complete -o default -o nospace -F _git g;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "firefox root" killall;
+
+unset SSH_ASKPASS

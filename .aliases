@@ -10,10 +10,6 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -71,7 +67,4 @@ command -v hd > /dev/null || alias hd="hexdump -C"
 # Trim new lines and copy to clipboard
 #alias c="tr -d '\n' | pbcopy"
 
-# feh - image viewer: always displays filename (tinted), verbose, full screen
-alias feh='feh -d --draw-tinted -V -F'
-# With EXIF information
-alias feh-exif='feh --draw-exif'
+alias work='cd /afs/cern.ch/work/h/hpascoal'

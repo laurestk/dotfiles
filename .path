@@ -1,0 +1,19 @@
+export ROOTSYS="/afs/cern.ch/sw/lcg/app/releases/ROOT/5.34.00/x86_64-slc5-gcc43-dbg/root"
+export LD_LIBRARY_PATH="$ROOTSYS/lib"
+
+# Setup Python and PyROOT (assuming root paths exist)
+export PYTHONDIR"=/afs/cern.ch/sw/lcg/external/Python/2.7.4/x86_64-slc6-gcc48-opt/"
+export PYTHONPATH="$PYTHONDIR/bin"
+export PATH="$PYTHONPATH:$PATH"
+
+export LD_LIBRARY_PATH="$PYTHONDIR/lib:$LD_LIBRARY_PATH"
+export PYTHONPATH="$ROOTSYS/lib:$PYTHONPATH"
+
+# Additional PATHS
+export PATH="$PATH:$HOME/HPlusScripts/"
+export PATH="$PATH:$HOME/HPlusScripts/tcsh/"
+export PATH="$PATH:$HOME/HPlusScripts/bash/"
+export PATH="$PATH:$HOME/HPlusScripts/python/"
+export PATH="$PATH:$HOME/HPlusScripts/login/"
+export PATH="$PATH:$HOME/HPlusScripts/lxbatch/"
+

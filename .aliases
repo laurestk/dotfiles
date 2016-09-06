@@ -52,7 +52,6 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
 
-#alias work='cd /afs/cern.ch/work/h/hpascoal'
 alias work='cd $WORKSPACE'
 
 alias scram5='export SCRAM_ARCH=slc5_amd64_gcc462'
